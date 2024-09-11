@@ -1,10 +1,13 @@
-# Tiny Crate
-Made with Godot 3.5 / Precision Puzzle Platformer Game
+# ![icon](media/image/icon.png) Tiny Crate
+Made with Godot 3.5
+
+Precision Puzzle Platformer Game
 
 Play now at [harmonyhoney.itch.io/tinycrate](https://harmonyhoney.itch.io/tinycrate) ! (:
 
-# License
-This is free and unencumbered software released into the public domain, see [UNLICENSE](UNLICENSE) for more information.
+## License
+This is free and unencumbered software! See [UNLICENSE](UNLICENSE) for more information.
 
-# Privacy Policy
-No user data is colleced! ^.^
+## Screenshots
+![shot1](media/image/screens/1.png)
+![shot2](media/image/screens/2.png)
