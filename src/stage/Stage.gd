@@ -2,6 +2,7 @@ tool
 extends Node2D
 
 export var palette := -1 setget set_palette
+export var is_random := false
 var palettes := [["c2c3c7", "5f574f", "008751", "ad0028"],
 ["c46874", "3d1c2f", "bd9400", "ad0028"],
 ["b2b2db", "39394f", "838700", "ab378a"],
@@ -13,17 +14,31 @@ export var color_back := Color("5f574f") setget set_back
 export var color_grass := Color("008751") setget set_grass
 export var color_wood := Color("ad0028") setget set_wood
 
-onready var map_solid := $SolidTileMap
-onready var map_spike := $SpikeTileMap
-onready var map_detail := $DetailTileMap
-onready var map_obscure := $ObscureMap
+onready var map_solid := get_node_or_null("SolidTileMap")
+onready var map_spike := get_node_or_null("SpikeTileMap")
+onready var map_detail := get_node_or_null("DetailTileMap")
+onready var map_obscure := get_node_or_null("ObscureMap")
+
+export var color_path : NodePath = ""
+onready var color_node : CanvasItem = get_node_or_null(color_path)
 
 func _ready():
+	if !Engine.editor_hint and is_random:
+		rnd(false)
+	
 	set_palette()
 	set_solid()
 	set_back()
 	set_grass()
 	set_wood()
+
+func rnd(is_act = true):
+	var p = randi() % 5
+	if p == palette:
+		p = (p + 1) % 5
+	
+	palette = p
+	if is_act: set_palette()
 
 func set_palette(arg := palette):
 	palette = arg
@@ -51,6 +66,8 @@ func set_grass(arg := color_grass):
 	color_grass = arg
 	if map_detail:
 		map_detail.grass_color = color_grass
+	if color_node:
+		color_node.modulate = color_grass
 	
 func set_wood(arg := color_wood):
 	color_wood = arg

@@ -272,16 +272,16 @@ func time_to_string(arg := 0.0, mod := 60.0):
 
 func save_file(fname, arg):
 	var file = File.new()
-	file.open(str(fname), File.WRITE)
-	file.store_string(arg)
-	file.close()
+	if OK == file.open(str(fname), File.WRITE):
+		file.store_string(arg)
+		file.close()
 
 func load_file(fname = ""):
 	var file = File.new()
-	file.open(str(fname), File.READ)
-	var content = file.get_as_text()
-	file.close()
-	return content
+	if OK == file.open(str(fname), File.READ):
+		var content = file.get_as_text()
+		file.close()
+		return content
 
 func save():
 	var data = {}

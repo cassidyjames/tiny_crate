@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://media/image/creator.png" type="Texture" id=1]
 [ext_resource path="res://media/image/crate_tiles.png" type="Texture" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://media/font/m3x6.ttf" type="DynamicFontData" id=23]
 [ext_resource path="res://media/font/QuinqueFive.ttf" type="DynamicFontData" id=24]
 [ext_resource path="res://media/font/m3x6.tres" type="DynamicFont" id=25]
+[ext_resource path="res://src/stage/Stage.gd" type="Script" id=26]
 
 [sub_resource type="DynamicFont" id=3]
 extra_spacing_top = -3
@@ -831,6 +832,9 @@ align = 2
 valign = 2
 
 [node name="Stage" type="Node2D" parent="."]
+script = ExtResource( 26 )
+is_random = true
+color_path = NodePath("../Control/Logo")
 
 [node name="SolidTileMap" parent="Stage" instance=ExtResource( 11 )]
 tile_set = SubResource( 13 )

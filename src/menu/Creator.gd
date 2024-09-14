@@ -66,6 +66,7 @@ func _input(event):
 			for i in 4:
 				set_color(i, randi() % 14)
 				fill_swatches(i)
+			$Stage.rnd()
 		elif is_no:
 			is_input = false
 			if !Shared.save_data[Shared.save_slot].empty(): Shared.is_save = true
