@@ -7,6 +7,7 @@ onready var open_menu := $Control/Open
 onready var erase_menu := $Control/Erase
 onready var menu_stuff := main_menu.get_children()
 onready var credits_node := $Credits
+onready var stage := $Stage
 
 export var open_player_path : NodePath = ""
 onready var open_player_mat : ShaderMaterial = get_node(open_player_path).material
@@ -43,6 +44,8 @@ func btn_no():
 		is_credits = false
 		credits_node.visible = false
 		close_sub()
+		stage.rnd()
+		Audio.play("menu_back", 0.3, 2.0)
 	else:
 		if menu_items == open_items:
 			Player.set_palette(demo_player_mat, Shared.pick_player_colors())
