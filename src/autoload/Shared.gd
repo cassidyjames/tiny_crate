@@ -73,6 +73,7 @@ var username := "crate_kid"
 export (Array, Color) var palette := []
 var player_colors = [8, 0, 11, 13]
 var preset_palettes = [[7, 13, 6, 3], [8, 0, 11, 13], [11, 7, 9, 0], [12, 1, 7, 5], [9, 8, 12, 3]]
+var last_palette = -1
 
 func _ready():
 	print("Shared._ready(): ")
@@ -506,7 +507,13 @@ func die():
 	print("you died")
 
 func pick_player_colors():
-	return preset_palettes[randi() % preset_palettes.size()]
+	var s = preset_palettes.size()
+	var r = randi() % s
+	if r == last_palette:
+		r = (r + 1) % s
+	
+	last_palette = r
+	return preset_palettes[r]
 
 # look into a folder and return a list of filenames without file extension
 func dir_list(path : String):

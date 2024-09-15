@@ -44,8 +44,9 @@ func btn_no():
 		is_credits = false
 		credits_node.visible = false
 		close_sub()
-		stage.rnd()
 		Audio.play("menu_back", 0.3, 2.0)
+		stage.rnd()
+		Player.set_palette(demo_player_mat, Shared.pick_player_colors())
 	else:
 		if menu_items == open_items:
 			Player.set_palette(demo_player_mat, Shared.pick_player_colors())
