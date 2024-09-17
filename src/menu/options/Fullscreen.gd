@@ -19,7 +19,7 @@ func _input(event):
 		Shared.set_fullscreen(!is_full)
 		#OS.window_fullscreen = !is_full
 		Shared.set_window_scale()
-		Audio.play("menu_pause", 0.9, 1.1)
+		Audio.play("menu_pause", 0.7, 1.3)
 		fill.visible = !is_full
 		if !is_full:
 			Input.set_mouse_mode(Input.MOUSE_MODE_HIDDEN)
