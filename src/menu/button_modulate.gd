@@ -7,7 +7,7 @@ export var color_path : NodePath = "."
 onready var color_node : CanvasItem = get_node_or_null(color_path)
 
 export var press_color := Color(1,0,1, 1.0)
-export var idle_color := Color(1,1,1, 0.66)
+export var idle_color := Color(1,1,1, 0.5)
 
 func _ready():
 	if is_instance_valid(button):
