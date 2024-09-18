@@ -74,15 +74,14 @@ align = 1
 
 [node name="MenuItems" type="VBoxContainer" parent="Center/Control"]
 margin_left = 58.0
-margin_top = 18.0
+margin_top = 21.0
 margin_right = 174.0
-margin_bottom = 128.0
+margin_bottom = 113.0
 alignment = 1
 
 [node name="Keyboard" type="HBoxContainer" parent="Center/Control/MenuItems"]
-margin_top = 9.0
 margin_right = 116.0
-margin_bottom = 17.0
+margin_bottom = 8.0
 rect_min_size = Vector2( 0, 8 )
 script = ExtResource( 3 )
 
@@ -106,9 +105,9 @@ margin_bottom = 8.0
 rect_min_size = Vector2( 8, 0 )
 
 [node name="Gamepad" type="HBoxContainer" parent="Center/Control/MenuItems"]
-margin_top = 21.0
+margin_top = 12.0
 margin_right = 116.0
-margin_bottom = 29.0
+margin_bottom = 20.0
 rect_min_size = Vector2( 0, 8 )
 script = ExtResource( 3 )
 is_gamepad = true
@@ -133,14 +132,14 @@ margin_bottom = 8.0
 rect_min_size = Vector2( 8, 0 )
 
 [node name="Sounds" parent="Center/Control/MenuItems" instance=ExtResource( 2 )]
-margin_top = 33.0
+margin_top = 24.0
 margin_right = 116.0
-margin_bottom = 41.0
+margin_bottom = 32.0
 
 [node name="Music" parent="Center/Control/MenuItems" instance=ExtResource( 2 )]
-margin_top = 45.0
+margin_top = 36.0
 margin_right = 116.0
-margin_bottom = 53.0
+margin_bottom = 44.0
 bus = 2
 
 [node name="Label" parent="Center/Control/MenuItems/Music" index="0"]
@@ -168,9 +167,9 @@ stream = ExtResource( 5 )
 bus = "Music"
 
 [node name="Fullscreen" type="HBoxContainer" parent="Center/Control/MenuItems"]
-margin_top = 57.0
+margin_top = 48.0
 margin_right = 116.0
-margin_bottom = 65.0
+margin_bottom = 56.0
 script = ExtResource( 20 )
 
 [node name="Label" type="Label" parent="Center/Control/MenuItems/Fullscreen"]
@@ -218,9 +217,9 @@ margin_bottom = 8.0
 rect_min_size = Vector2( 8, 0 )
 
 [node name="WindowSize" type="HBoxContainer" parent="Center/Control/MenuItems"]
-margin_top = 69.0
+margin_top = 60.0
 margin_right = 116.0
-margin_bottom = 77.0
+margin_bottom = 68.0
 rect_min_size = Vector2( 0, 8 )
 script = ExtResource( 21 )
 
@@ -254,9 +253,9 @@ text = "228 x 128"
 align = 1
 
 [node name="Borderless" type="HBoxContainer" parent="Center/Control/MenuItems"]
-margin_top = 81.0
+margin_top = 72.0
 margin_right = 116.0
-margin_bottom = 89.0
+margin_bottom = 80.0
 script = ExtResource( 8 )
 
 [node name="Label" type="Label" parent="Center/Control/MenuItems/Borderless"]
@@ -301,9 +300,9 @@ margin_bottom = 8.0
 rect_min_size = Vector2( 8, 0 )
 
 [node name="TouchControls" type="HBoxContainer" parent="Center/Control/MenuItems"]
-margin_top = 93.0
+margin_top = 84.0
 margin_right = 116.0
-margin_bottom = 101.0
+margin_bottom = 92.0
 script = ExtResource( 22 )
 
 [node name="Label" type="Label" parent="Center/Control/MenuItems/TouchControls"]
