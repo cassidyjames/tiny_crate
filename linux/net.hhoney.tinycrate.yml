@@ -19,7 +19,7 @@ modules:
     path: ../
 
   - type: file
-    url: https://github.com/cassidyjames/tiny_crate/releases/download/2024.09.18/Tiny-Crate.pck
+    url: https://github.com/HarmonyHoney/tiny_crate/releases/download/2024.12.16/Tiny-Crate.pck
     sha256: 538cd6dded643b93011fbd6681da2dbe5f5d01c8d56625d4c1cc77dce174fd29
 
   build-commands:
