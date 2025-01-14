@@ -3,7 +3,7 @@ Made with Godot 3.6
 
 Precision Puzzle Platformer Game
 
-Full Game at [https://hhoneysoftware.itch.io/candy](https://hhoneysoftware.itch.io/candy) ! (:
+Full Game at [hhoneysoftware.itch.io/tiny_crate](https://hhoneysoftware.itch.io/tiny_crate) ! (:
 
 ## License
 This is free and unencumbered software! See [UNLICENSE](UNLICENSE) for more information.
