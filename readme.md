@@ -3,7 +3,7 @@ Made with Godot 3.6
 
 Precision Puzzle Platformer Game
 
-Play now at [harmonyhoney.itch.io/tinycrate](https://harmonyhoney.itch.io/tinycrate) ! (:
+Full Game at [https://hhoneysoftware.itch.io/candy](https://hhoneysoftware.itch.io/candy) ! (:
 
 ## License
 This is free and unencumbered software! See [UNLICENSE](UNLICENSE) for more information.
